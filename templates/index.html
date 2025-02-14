@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Natural is the new normal</title>
+        {% load static %}
+        
+        <link 
+          href="{% static 'style.css' %}"
+          rel="stylesheet"
+        />
+        <link 
+          href="{% static 'button-styles.css' %}"
+          rel="stylesheet"
+        />
+        <link 
+          href="{% static 'fixes.css' %}"
+          rel="stylesheet"
+        />
+
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        
+    </head>
+    <body>
+        
+        <nav class="Navbar">
+          <div class="container">
+            <div class="Logo"></div>
+    
+            <div id="menu" class="menu">
+              <header class="inline">
+                <div class="Logo"></div>
+                <button
+                  id="closeMenuBtn"
+                  title="Close Menu"
+                  aria-label="Close Menu"
+                  class="NavButton"
+                >
+                  <i class="ri-close-line"></i>
+                </button>
+              </header>
+    
+              <a href="#" class="NavLink">Home</a>
+              <a href="#products" class="NavLink">Our Products</a>
+              <a href="#features" class="NavLink">Features</a>
+              <a href="#order" class="NavLink">Order Now</a>
+              <a href="#contact" class="NavLink">Contact Us</a>
+            </div>
+    
+            <button
+              id="openMenuBtn"
+              title="Open Menu"
+              aria-label="Open Menu"
+              class="NavButton"
+            >
+              <i class="ri-menu-line"></i>
+            </button>
+          </div>
+        </nav>
+        <main>
+          <section id="home">
+            <div class="hero">
+              <div class="visual">
+                <picture>
+                  <source
+                    srcset="
+                     static/assets/images/skincare.svg
+                    "
+                    type="image/svg"
+                    media="(width > 1024px)"
+                  />
+                  <source
+                    srcset="
+                      static/assets/images/skincare_mobile
+                    "
+                    type="image/svg"
+                  />
+                  <source
+                    srcset="
+                      static/assets/images/skincare.svg
+                    "
+                    media="(width > 1024px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="static/assets/images/skincare.svg"
+                    alt="skincare" 
+                  />
+                </picture>
+              </div>
+    
+              <div class="content">
+                <h1>natural is the new normal</h1>
+                <div class="wrapper">
+                  <a href="#discover" class="LinkButton Primary"> DISCOVER MORE </a>
+                </div>
+              </div>
+            </div>
+    
+            <div id="products" class="fold">
+              <div class="subject">
+                <p>
+                  "Embrace nature's way,
+                  <span style="color: var(--brand-1)"
+                    >nurturing your skin with pure,
+                    </span
+                  >
+                  organic ingredients."
+                </p>
+              </div>
+            </div>
+          </section>
+    
+          <section id="features" class="schedule">
+            <div class="showcase">
+              <video
+                autoplay
+                loop
+                muted
+                poster="static/assets/images/natural.svg"
+                role="none"
+              >
+                <source src="static/assets/videos/skin.mp4" type="video/mp4" />
+              </video>
+              <img src="static/assets/images/natural.png" alt="Rhythm" />
+            </div>
+          </section>
+    
+          <section id="order" class="cards">
+              <div class="container"> 
+                <a href="#" class="Card">
+                  <div>
+                    <h2>Avocado Soap</h2>
+                    <img src="static/assets/images/AvocadoSoap.png" alt="Avocado Soap">
+                    <h2>$4.50</h2>
+                    <div id="paypal-button-container" class="Button" onclick="addToCart()">Buy Now</div>
+                  </div>
+                </a> <a href="#" class="Card">
+                  <div>
+                    <h2>Shea Butter Soap</h2>
+                    <img src="static/assets/images/SheaButterSoap.png" alt="Avocado Soap">
+                    <h2>$4.50</h2>
+                    <div id="paypal-button-container" class="Button" onclick="addToCart()">Buy Now</div>
+                  </div>
+                </a> <a href="#" class="Card">
+                  <div>
+                    <h2>Olive Soap</h2>
+                    <img src="static/assets/images/OliveSoap.png" alt="Avocado Soap">
+                    <h2>$4.50</h2>
+                    <div id="paypal-button-container" class="Button" onclick="addToCart()">Buy Now</div>
+                  </div>
+                </a> <a href="#" class="Card">
+                  <div>
+                    <h2>Black Tea Tree Soap</h2>
+                    <img src="static/assets/images/BlackSoap.png" alt="Avocado Soap">
+                    <h2>$4.50</h2>
+                    <div id="paypal-button-container" class="Button" onclick="addToCart()">Buy Now</div>
+                  </div>
+                </a> <a href="#" class="Card">
+                  <div>
+                    <h2>Rice Bran Soap</h2>
+                    <img src="static/assets/images/RiceSoap.png" alt="Avocado Soap">
+                    <h2>$4.50</h2>
+                    <div id="paypal-button-container" class="Button" onclick="addToCart()">Buy Now</div>
+                  </div>
+                  </a> </div>
+            </div>
+          </section>
+
+          <section id="contact" class="about">
+            <div class="table-wrapper">
+              <h2>TRUSTED SKINCARE</h2>
+              <table cellspacing="0" cellpading="0">
+                <tr>
+                  <th>LET'S GET SOCIAL!</th>
+                </tr>
+                <tr>
+                  <td>Instagram</td>
+                </tr>
+                <tr>
+                  <td>Twitter</td>
+                </tr>
+                <tr>
+                  <td>Facebook</td>
+                </tr>
+                <tr>
+                  <td>Tiktok</td>
+                </tr>
+              </table>
+              <table cellspacing="0" cellpading="0">
+                <tr>
+                  <th>WHERE TO FIND US</th>
+                </tr>
+                <tr>
+                  <td>UNITED STATES
+                    Van Diemenstraat 38
+                    1013NH Amsterdam
+                    California
+                  </td>
+                  <td>PHILIPPINES
+                    1013NH Amsterdam
+                    Van Diemenstraat 38
+                    Makati City
+                  </td>
+                </tr>
+              </table>
+            </div>
+            
+            <footer>
+              <p>
+                Quantumtek Enterprises LLC.&reg;
+                <a
+                  href="https://www.tonsgamehub.com"
+                  style="color: var(--brand-1); text-decoration: none"
+                  >website.</a
+                >
+                2024  
+              </p>
+            </footer>
+          </section>
+        </main>
+        
+</body>
+
+<script>
+  function addToCart() {
+      // You can add any logic here to handle adding the item to the cart
+      // For example, you can use localStorage to store cart items
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({
+          name: 'Rice Bran Soap',
+          price: 'XX',
+          image: 'static/assets/images/RiceSoap.png'
+      });
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Redirect to orders.html
+      window.location.href = 'orders.html';
+  }
+</script>
+
+<script src="https://www.paypal.com/sdk/js?client-id={{ PAYPAL_CLIENT_ID }}&currency=USD"></script>
+<script src="static/script.js"></script>
+</html>
