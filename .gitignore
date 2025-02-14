@@ -8,7 +8,6 @@ env/
 venv/
 ENV/
 media/
-staticfiles/
 .DS_Store
 *.pyo
 *.pyd
