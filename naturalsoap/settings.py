@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(^ls(ag$iqj2%!dye2e$fce!v80&i3(=3bl%i^n(%$5&p)6cfq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['naturalsoap.onrender.com', 'localhost', 'http://127.0.0.1:8000']
+ALLOWED_HOSTS = ['naturalsoap.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -119,7 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
