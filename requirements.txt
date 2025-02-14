@@ -4,3 +4,4 @@ paypalrestsdk
 django-paypal
 django-widget-tweaks
 gunicorn
+pillow
