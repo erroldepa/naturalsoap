@@ -1,0 +1,35 @@
+.Button,
+  .LinkButton {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: calc(var(--size-2) + var(--border-size-1))
+      calc(var(--size-4) + var(--border-size-2));
+    font-size: 1.25rem;
+    min-inline-size: 13ch;
+    transition: 0.2s ease;
+    background-color: var(--brand-1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Button:hover,
+  .LinkButton:hover {
+    background-color: var(--brand-2);
+  }
+
+  .Button.Primary,
+  .LinkButton.Primary {
+    background-color: var(--brand-1);
+    color: white;
+  }
+
+  .Button.Primary:hover,
+  .LinkButton.Primary:hover {
+    background-color: var(--brand-2);
+  }

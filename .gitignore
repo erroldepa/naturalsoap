@@ -14,4 +14,3 @@ staticfiles/
 *.pyd
 .Python
 local_settings.py
-static/
