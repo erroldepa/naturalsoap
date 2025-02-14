@@ -3,3 +3,4 @@ psycopg2
 paypalrestsdk
 django-paypal
 django-widget-tweaks
+gunicorn
