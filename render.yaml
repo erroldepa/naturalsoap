@@ -1,0 +1,13 @@
+
+services:
+  - type: web
+    name: natural-soap
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn naturalsoap.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9
+
+    healthCheckPath: /
+    autoDeploy: true
