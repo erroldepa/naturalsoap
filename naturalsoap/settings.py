@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(^ls(ag$iqj2%!dye2e$fce!v80&i3(=3bl%i^n(%$5&p)6cfq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['naturalsoap.onrender.com', 'localhost', 'http://127.0.0.1:8000']
 
 
 # Application definition
